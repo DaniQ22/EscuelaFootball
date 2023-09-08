@@ -9,7 +9,7 @@ package com.mycompany.escuelafootball;
  * @author Usuario
  */
 public class Jugador {
-    String Vector[];
+    Jugador jugador[];
     int tamaño;
     int id;
     String nombre;
@@ -17,22 +17,23 @@ public class Jugador {
     String categoria;
     
     public Jugador(){
-        Vector = null;
-        tamaño = 0;
-        id = 0;
-        nombre = "";
-        edad = 0;
-        categoria = "";        
+       tamaño = 0;
+       id = 0;
+       nombre = "";
+       edad = 0;
+       categoria = "";
+       jugador = null;
+    } 
+
+    public Jugador[] getJugador() {
+        return jugador;
     }
 
-    public String[] getVector() {
-        return Vector;
+    public void setJugador(Jugador[] jugador) {
+        this.jugador = jugador;
     }
-
-    public void setVector(String[] Vector) {
-        this.Vector = Vector;
-    }
-
+    
+ 
     public int getTamaño() {
         return tamaño;
     }
@@ -72,8 +73,4 @@ public class Jugador {
     public void setCategoria(String categoria) {
         this.categoria = categoria;
     }
-    
-    
-    
-    
 }
