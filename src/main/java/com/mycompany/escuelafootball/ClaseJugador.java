@@ -34,4 +34,5 @@ public class ClaseJugador {
         jugador = new Jugador[getTamaño()];
         
     }
+    
 }

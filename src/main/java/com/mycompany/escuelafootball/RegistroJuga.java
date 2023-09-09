@@ -152,7 +152,10 @@ public class RegistroJuga extends javax.swing.JFrame {
         int valor = Integer.parseInt(Caja1.getText());
         jugador.setTamaño(valor);
         jugador.crearVector();
-        JOptionPane.showMessageDialog(null, "El vectro Jugador ha sido creado");       
+        JOptionPane.showMessageDialog(null, "El vectro Jugador ha sido creado");
+        this.Caja1.setText("");
+        this.jPanel2.setVisible(false);
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
