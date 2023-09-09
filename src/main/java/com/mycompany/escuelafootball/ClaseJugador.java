@@ -18,8 +18,8 @@ public class ClaseJugador {
         return jugador;
     }
 
-    public void setJugador(Jugador[] jugador) {
-        this.jugador = jugador;
+    public void setJugador(int pos, Jugador player) {
+        this.jugador[pos] = player;
     }
 
     public int getTamaño() {
@@ -33,6 +33,15 @@ public class ClaseJugador {
     public void crearVector(){
         jugador = new Jugador[getTamaño()];
         
+    }
+    
+    public String mostrarVector(){
+        String lis = "";
+        for (int i = 0; i < getTamaño(); i++) {
+           lis = "Los datos del vector son " + i + " " + jugador[i].getNombre();
+            
+        }
+        return lis;
     }
     
 }

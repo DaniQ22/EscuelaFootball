@@ -8,14 +8,12 @@ public class Jugador { /*Clase solo atributos del jugador*/
     int id;
     String nombre;
     int edad;
-    String categoria;
     String posicion;
 
     public Jugador() {
         id = 0;
         nombre = "";
         edad = 0;
-        categoria = "";
         posicion = "";
     }
     
@@ -43,14 +41,6 @@ public class Jugador { /*Clase solo atributos del jugador*/
         this.edad = edad;
     }
 
-    public String getCategoria() {
-        return categoria;
-    }
-
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
-    }
-    
         public String getPosicion() {
         return posicion;
     }
