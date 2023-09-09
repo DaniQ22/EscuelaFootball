@@ -48,4 +48,5 @@ public class Jugador { /*Clase solo atributos del jugador*/
     public void setPosicion(String posicion) {
         this.posicion = posicion;
     }
+   
 }

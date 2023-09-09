@@ -8,7 +8,7 @@ package com.mycompany.escuelafootball;
 public class ClaseJugador {
     Jugador jugador[];
     int tamaño;
-    
+        
     public ClaseJugador(){
         jugador = null;
         tamaño = 0;
@@ -35,13 +35,38 @@ public class ClaseJugador {
         
     }
     
-    public String mostrarVector(){
+    /*public String mostrarVector(){
         String lis = "";
         for (int i = 0; i < getTamaño(); i++) {
-           lis = "Los datos del vector son " + i + " " + jugador[i].getNombre();
+           lis += "Los datos del vector son " + i + " " + this.jugador[i].getNombre();
             
         }
         return lis;
+    }*/
+    
+    public String mostrarVector(){
+        String lis = "";
+        for (int i = 0; i < getTamaño(); i++) {
+           lis += "Nombre del Jugador: " + this.jugador[i].getNombre() + " Su ID es: " + this.jugador[i].getId() 
+                   + " Su edad es; " + this.jugador[i].getEdad() + " Su posicion en la que juega es; " + this.jugador[i].getPosicion()+ " \n";
+ 
+        }
+        return lis;
+    }
+    
+    public String buscarId(int BusId){
+        String lis = "";
+        for (int i = 0; i <getTamaño(); i++) {
+            if (jugador[i].getId()==BusId) {
+                lis += "El nombre es; " + this.jugador[i].getNombre() + " Su edad es: " + this.jugador[i].getEdad() + 
+                        " Juega en la posicion: " + this.jugador[i].getPosicion();       
+            }else {
+                lis +="El jugador no existe";
+            }
+            
+        }
+        return lis;
+
     }
     
 }
