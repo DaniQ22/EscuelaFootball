@@ -11,6 +11,8 @@ package com.mycompany.escuelafootball;
 public class EscuelaFootball {
 
     public static void main(String[] args) {
+        RegistroJuga regis = new RegistroJuga();
+        regis.setVisible(true);
 
     }
 }
