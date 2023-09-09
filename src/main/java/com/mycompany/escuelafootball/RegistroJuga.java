@@ -19,7 +19,9 @@ public class RegistroJuga extends javax.swing.JFrame {
     }
     
     
-    Jugador jugador = new Jugador();
+    ClaseJugador jugador = new ClaseJugador();
+    Jugador jugad = new Jugador();
+    
    
 
     @SuppressWarnings("unchecked")
@@ -150,9 +152,7 @@ public class RegistroJuga extends javax.swing.JFrame {
         int valor = Integer.parseInt(Caja1.getText());
         jugador.setTamaño(valor);
         jugador.crearVector();
-        JOptionPane.showMessageDialog(null, "El vectro Jugador ha sido creado");
-        this.Pantalla.setText(""+jugador.mostrarVector());
-        
+        JOptionPane.showMessageDialog(null, "El vectro Jugador ha sido creado");       
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

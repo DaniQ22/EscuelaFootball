@@ -4,38 +4,21 @@
  */
 package com.mycompany.escuelafootball;
 
-public class Jugador {
-
-    Jugador[] jugador;
-    int tamaño;
+public class Jugador { /*Clase solo atributos del jugador*/
     int id;
     String nombre;
     int edad;
     String categoria;
+    String posicion;
 
     public Jugador() {
         id = 0;
         nombre = "";
         edad = 0;
         categoria = "";
+        posicion = "";
     }
-
-    public Jugador[] getJugador() {
-        return jugador;
-    }
-
-    public void setJugador(Jugador[] jugador) {
-        this.jugador = jugador;
-    }
-
-    public int getTamaño() {
-        return tamaño;
-    }
-
-    public void setTamaño(int tamaño) {
-        this.tamaño = tamaño;
-    }
-
+    
     public int getId() {
         return id;
     }
@@ -67,18 +50,12 @@ public class Jugador {
     public void setCategoria(String categoria) {
         this.categoria = categoria;
     }
-
-    public void crearVector() {
-        jugador = new Jugador[getTamaño()];
+    
+        public String getPosicion() {
+        return posicion;
     }
 
-    public String mostrarVector() {
-        String lis = "";
-        for (int i = 0; i < getTamaño(); i++) {
-            lis = "Los datos del vectro son" + jugador[i];
-
-        }
-        return lis;
+    public void setPosicion(String posicion) {
+        this.posicion = posicion;
     }
-
 }
